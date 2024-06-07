@@ -2,7 +2,18 @@
 
 namespace App\Http\Controllers;
 
-abstract class Controller
+class Controller
 {
-    protected function redirect
+    public function welcome(){
+        return view('welcome');
+    }
+    public function index(){
+        return "Hello World!";
+    }
+    public function form(){
+        return view('form');
+    }
+    public function payrollTaxes(){
+        return view('payroll-taxes');
+    }
 }
